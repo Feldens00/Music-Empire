@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Music_Empire.Models.Empresas>
+@{
+    ViewBag.Title = "Empresas";
+}
+
+<h2>Empresas</h2>
+<a class="btn btn-block" href="~/Empresas/CreateEmpresas"> + Empresa</a>
+<table class="table table-responsive table-hover">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Estado</th>
+            <th>Cidade</th>
+       </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.nomeEmpresa</th>
+            <th>@item.enderecoEmpresa</th>
+            <th>@item.localEmpresa.nomeEstado</th>
+            <th>@item.localEmpresa.nomeCidade</th>
+            
+           
+            <th><a class="btn btn-warning" href="~/Empresas/UpdateEmpresas/@item.idEmpresa">Atualizar</a></th>
+            <th><a class="btn btn-danger" href="~/Empresas/Delete/@item.idEmpresa">Deletar</a></th>
+        </tr>
+    }
+</table>
+

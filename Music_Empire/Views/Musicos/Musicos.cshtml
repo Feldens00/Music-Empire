@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Music_Empire.Models.Musico>
+@{
+    ViewBag.Title = "Musicos";
+}
+
+<h2>Musico</h2>
+
+<a class="btn btn-block" href="~/Musicos/CreateMusicos"> + Musico</a>
+<table class="table table-responsive table-hover">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Estado</th>
+            <th>Cidade</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.nomeMusico</th>
+            <th>@item.enderecoMusico</th>
+            <th>@item.localMusico.nomeEstado</th>
+            <th>@item.localMusico.nomeCidade</th>
+
+
+            <th><a class="btn btn-warning" href="~/Musicos/UpdateMusicos/@item.idMusico">Atualizar</a></th>
+            <th><a class="btn btn-danger" href="~/Musicos/Delete/@item.idMusico">Deletar</a></th>
+        </tr>
+    }
+</table>

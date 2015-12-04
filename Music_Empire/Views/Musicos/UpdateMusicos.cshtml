@@ -1,0 +1,62 @@
+﻿@model Music_Empire.Models.Musico
+
+@{
+    ViewBag.Title = "UpdateMusicos";
+}
+
+<h2>UpdateMusicos</h2>
+
+
+
+<div class="panel">
+    <form action="~/Musicos/UpdateMusicos" method="post">
+
+
+        <div class="form-group">
+
+            <input class="form-control" type="hidden" id="idMusico" name="idMusico" value="@Model.idMusico" />
+        </div>
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" placeholder="Nome do Musico" type="text" id="nomeMusico" name="nomeMusico" value="@Model.nomeMusico" />
+        </div>
+
+        <div class="form-group">
+            <label>Endereço</label>
+            <input class="form-control" placeholder="Endereço do Musico" type="text" id="enderecoMusico" name="enderecoMusico" value="@Model.enderecoMusico"/>
+        </div>
+
+        @*<div class="form-group">
+            <label>Estado</label>
+            <select class="form-control" id="SelectedUserRoleId" name="localMusico.idLocal">
+                <option value="@Model.localMusico.idLocal">@Model.localMusico.nomeEstado</option>
+               
+                @foreach (var item in @ViewBag.ListEstado)
+                {
+                    <option value="@item.idLocal">@item.nomeEstado</option>
+                }
+
+            </select>
+        </div>*@
+
+        <div class="form-group">
+            <label>Cidade</label>
+            <select class="form-control" id="SelectedUserRoleId" name="localMusico.idLocal">
+                <option value="@Model.localMusico.idLocal">@Model.localMusico.nomeCidade</option>
+
+               
+                @foreach (Music_Empire.Models.Local item in @ViewBag.ListCidades)
+                {
+                    <option value="@item.idLocal">@item.nomeCidade</option>
+                }
+
+            </select>
+        </div>
+
+
+
+
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Music_Empire.Models.Local>
+@{
+    ViewBag.Title = "Local";
+}
+
+<h2>Local</h2>
+<a class="btn btn-block" href="~/Local/CreateLocal"> + Local</a>
+<table class="table table-responsive table-hover">
+    <thead>
+        <tr>
+            <th>Sigla do Estado</th>
+            <th>Nome do Estado</th>
+            <th>Cidade</th>
+             
+           
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.sigla</th>
+            <th>@item.nomeEstado</th>
+            <th>@item.nomeCidade</th>
+            
+            
+
+            <th><a class="btn btn-warning" href="~/Local/UpdateLocal/@item.idLocal">Atualizar</a></th>
+            <th><a class="btn btn-danger" href="~/Local/Delete/@item.idLocal">Deletar</a></th>
+        </tr>
+    }
+</table>

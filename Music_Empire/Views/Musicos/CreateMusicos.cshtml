@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Music_Empire.Models.Musico>
+@{
+    ViewBag.Title = "CreateMusicos";
+}
+
+<h2>CreateMusico</h2>
+
+<div class="panel">
+    <form action="~/Musicos/CreateMusicos" method="post">
+
+
+
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" placeholder="Nome do Musico" type="text" id="nomeMusico" name="nomeMusico"  />
+        </div>
+
+        <div class="form-group">
+            <label>Endereço</label>
+            <input class="form-control" placeholder="Endereço do Musico" type="text" id="enderecoMusico" name="enderecoMusico" />
+        </div>
+
+        @*<div class="form-group">
+            <label>Estado</label>
+            <select class="form-control" id="SelectedUserRoleId" name="localMusico.idLocal">
+                <option value="value">Selecione o Estado</option>
+
+                @foreach (var item in @ViewBag.ListEstado)
+                {
+                    <option value="@item.idLocal">@item.nomeEstado </option>
+                }
+
+            </select>
+        </div>*@
+
+        <div class="form-group">
+            <label>Cidade</label>
+            <select class="form-control" id="SelectedUserRoleId" name="localMusico.idLocal">
+                <option value="value">Selecione uma Cidade</option>
+
+                @foreach (var item in @ViewBag.ListCidades)
+                {
+                    <option value="@item.idLocal">@item.nomeCidade</option>
+                }
+
+            </select>
+        </div>
+
+       
+
+
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>

@@ -1,0 +1,40 @@
+﻿@model Music_Empire.Models.Local
+@{
+    ViewBag.Title = "UpdateLocal";
+}
+
+<h2>Update</h2>
+
+<div class="panel">
+    <form action="~/Local/UpdateLocal/@Model.idLocal" method="post">
+
+
+        <div class="form-group">
+
+            <input class="form-control" type="hidden" id="idLocal" name="idLocal" value="@Model.idLocal" />
+        </div>
+
+        <div class="form-group">
+            <label>Sigla </label>
+            <input class="form-control" placeholder="Sigla do Estado" type="text" id="sigla" name="sigla" value="@Model.sigla"/>
+        </div>
+
+        <div class="form-group">
+            <label>Estado</label>
+            <input class="form-control" placeholder="Nome do Estado" type="text" id="nomeEstado" name="nomeEstado" value="@Model.nomeEstado" />
+        </div>
+
+        <div class="form-group">
+            <label>Cidade</label>
+            <input class="form-control" placeholder="Nome da Cidade" type="text" id="nomeCidade" name="nomeCidade" value="@Model.nomeCidade" />
+        </div>
+
+
+
+
+
+
+
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>

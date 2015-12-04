@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Music_Empire.Models.Local>
+@{
+    ViewBag.Title = "CreateLocal";
+}
+
+<h2>CreateLocal</h2>
+
+<div class="panel">
+    <form action="~/Local/CreateLocal" method="post">
+
+
+
+        <div class="form-group">
+            <label>Sigla </label>
+            <input class="form-control" placeholder="Sigla do Estado" type="text" id="sigla" name="sigla" />
+        </div>
+
+        <div class="form-group">
+            <label>Estado</label>
+            <input class="form-control" placeholder="Nome do Estado" type="text" id="nomeEstado" name="nomeEstado" />
+        </div>
+
+        <div class="form-group">
+            <label>Cidade</label>
+            <input class="form-control" placeholder="Nome da Cidade" type="text" id="nomeCidade" name="nomeCidade" />
+        </div>
+            
+
+
+           
+
+
+
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>
