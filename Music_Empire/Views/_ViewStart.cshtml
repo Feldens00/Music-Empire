@@ -1,3 +1,15 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿
+@{
+
+    var controller = HttpContext.Current.Request.RequestContext.RouteData.Values["Controller"].ToString();
+    string cLayout = "";
+    if (controller == "Home")
+    {
+        cLayout = " ~/Views/Shared/_LayoutMusicE.cshtml";
+    }
+    else
+    {
+        cLayout = "~/Views/Shared/_MusicE.cshtml";
+    }
+    Layout = cLayout;
 }

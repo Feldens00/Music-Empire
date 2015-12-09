@@ -1,0 +1,70 @@
+﻿@model Entidades.E.Eventos
+@{
+    ViewBag.Title = "Update";
+}
+div class="clear"> </div>
+<div class="top-nav">
+    <ul>
+        <li class="active1"><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Musicos/Musicos">Musicos</a></li>
+        <li><a href="~/Empresas/Empresas">Empresas</a></li>
+        <li><a href="~/Local/Local">Local</a></li>
+        <li><a href="~/Eventos/Eventos">Eventos</a></li>
+        <div class="clear"> </div>
+    </ul>
+</div>
+
+<div>
+
+    <font size="5" color="White">Editar</font>
+</div>
+
+<div class="panel">
+    <form action="~/Eventos/Update" method="post">
+
+
+        <div class="form-group">
+
+            <input class="form-control" type="hidden" id="idEvento" name="idEvento" value="@Model.idEvento" />
+        </div>
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" placeholder="Nome do Evento" type="text" id="nomeEvento" name="nomeEvento" value="@Model.nomeEvento" />
+        </div>
+
+        <div class="form-group">
+            <label>Data</label>
+            <input class="form-control" placeholder="Data do Evento" type="text" id="dataEvento" name="dataEvento" value="@Model.dataEvento" />
+        </div>
+        <div class="form-group">
+            <label>Endereço</label>
+            <input class="form-control" placeholder="Endereço do Evento" type="text" id="enderecoEvento" name="enderecoEvento" value="@Model.enderecoEvento" />
+        </div>
+
+
+
+        <div class="form-group">
+            <label>Cidade</label>
+            <select class="form-control" id="SelectedUserRoleId" name="localEvento.idLocal">
+                <option value="@Model.localEvento.idLocal">@Model.localEvento.nomeCidade</option>
+
+                @foreach (Entidades.E.Local item in @ViewBag.ListEstado)
+                {
+                    <option value="@item.idLocal">@item.nomeCidade</option>
+                }
+
+            </select>
+        </div>
+
+
+      
+
+
+
+
+
+
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>

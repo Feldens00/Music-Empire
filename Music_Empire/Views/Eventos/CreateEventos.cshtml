@@ -1,9 +1,24 @@
-﻿@model IEnumerable<Music_Empire.Models.Eventos>
+﻿@model IEnumerable<Entidades.E.Eventos>
 @{
     ViewBag.Title = "CreateEventos";
 }
+<div class="clear"> </div>
+<div class="top-nav">
+    <ul>
+        <li class="active1"><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Musicos/Musicos">Musicos</a></li>
+        <li><a href="~/Empresas/Empresas">Empresas</a></li>
+        <li><a href="~/Local/Local">Local</a></li>
+        <li><a href="~/Eventos/Eventos">Eventos</a></li>
+        <div class="clear"> </div>
+    </ul>
+</div>
 
-<h2>CreateEventos</h2>
+<div>
+
+    <font size="5" color="White">Crie um evento</font>
+</div>
+
 
 <div class="panel">
     <form action="~/Eventos/CreateEventos" method="post">
@@ -32,7 +47,7 @@
             <select class="form-control" id="SelectedUserRoleId" name="localEvento.idLocal">
                 <option value="value">Selecione a Cidade</option>
 
-                @foreach (var item in @ViewBag.ListEstado)
+                @foreach (Entidades.E.Local item in @ViewBag.ListEstado)
                 {
                     <option value="@item.idLocal">@item.nomeCidade</option>
                 }
@@ -46,7 +61,7 @@
             <select class="form-control" id="SelectedUserRoleId" name="empresaEvento.idEmpresa">
                 <option value="value">Selecione a Empresa</option>
 
-                @foreach (var item in @ViewBag.ListEmpresa)
+                @foreach (Entidades.E.Empresas item in @ViewBag.ListEmpresa)
                 {
                     <option value="@item.idEmpresa">@item.nomeEmpresa</option>
                 }
@@ -54,7 +69,18 @@
             </select>
         </div>
          
-        
+        <div class="form-group">
+            <label>Musico</label>
+            <select class="form-control" id="SelectedUserRoleId" name="musico.idMusico">
+                <option value="value">Selecione o Musico</option>
+
+                @foreach (Entidades.E.Musico item in @ViewBag.ListMusico)
+                {
+                    <option value="@item.idMusico">@item.nomeMusico</option>
+                }
+
+            </select>
+        </div>
 
         
        

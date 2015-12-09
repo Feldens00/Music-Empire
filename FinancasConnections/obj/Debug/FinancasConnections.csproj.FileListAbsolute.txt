@@ -1,0 +1,59 @@
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\bin\Debug\FinancasConnections.dll.config
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\bin\Debug\FinancasConnections.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\bin\Debug\FinancasConnections.pdb
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\bin\Debug\MySql.Data.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\obj\Debug\FinancasConnections.csproj.App.config
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\obj\Debug\FinancasConnections.csprojResolveAssemblyReference.cache
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\obj\Debug\FinancasConnections.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\FinancasConnections\FinancasConnections\obj\Debug\FinancasConnections.pdb
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.dll.config
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.pdb
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\bin\Debug\MySql.Data.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.csproj.App.config
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.pdb
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.dll.config
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.dll
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.pdb
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\bin\Debug\MySql.Data.dll
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.csproj.App.config
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.csprojResolveAssemblyReference.cache
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.dll
+C:\Users\Artur\Desktop\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.pdb
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.dll.config
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.pdb
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\bin\Debug\MySql.Data.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.csproj.App.config
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.csprojResolveAssemblyReference.cache
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.pdb
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.dll.config
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.dll
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\bin\Debug\FinancasConnections.pdb
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\bin\Debug\MySql.Data.dll
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.csproj.App.config
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.csprojResolveAssemblyReference.cache
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.dll
+C:\Users\Artur\Desktop\a\Music_Empire\FinancasConnections\obj\Debug\FinancasConnections.pdb

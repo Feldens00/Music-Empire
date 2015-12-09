@@ -1,9 +1,6 @@
-﻿using FinancasConnections;
-using Music_Empire.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Entidades.E;
+using FinancasConnections;
+using Repositorio.R;
 using System.Web.Mvc;
 
 namespace Music_Empire.Controllers

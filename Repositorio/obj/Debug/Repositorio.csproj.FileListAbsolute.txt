@@ -1,0 +1,30 @@
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\bin\Debug\Entidades.dll
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\bin\Debug\FinancasConnections.dll
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\bin\Debug\MySql.Data.dll
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\bin\Debug\Entidades.pdb
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\bin\Debug\FinancasConnections.pdb
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\Artur\Desktop\Music_Empire\Repositorio\obj\Debug\Repositorio.pdb
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\bin\Debug\Entidades.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\bin\Debug\FinancasConnections.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\bin\Debug\MySql.Data.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\bin\Debug\Entidades.pdb
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\bin\Debug\FinancasConnections.pdb
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\JoãoPaulo\AppData\Roaming\Skype\My Skype Received Files\Music_Empire(2)\Music_Empire\Repositorio\obj\Debug\Repositorio.pdb
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\bin\Debug\Entidades.dll
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\bin\Debug\FinancasConnections.dll
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\bin\Debug\MySql.Data.dll
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\bin\Debug\Entidades.pdb
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\bin\Debug\FinancasConnections.pdb
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\Artur\Desktop\a\Music_Empire\Repositorio\obj\Debug\Repositorio.pdb

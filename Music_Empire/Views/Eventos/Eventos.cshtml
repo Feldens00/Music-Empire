@@ -1,11 +1,37 @@
-﻿@model IEnumerable<Music_Empire.Models.Eventos>
+﻿@model IEnumerable<Entidades.E.Eventos>
 @{
     ViewBag.Title = "Eventos";
 }
+div class="clear"> </div>
+<div class="top-nav">
+    <ul>
+        <li class="active1"><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Musicos/Musicos">Musicos</a></li>
+        <li><a href="~/Empresas/Empresas">Empresas</a></li>
+        <li><a href="~/Local/Local">Local</a></li>
+        <li><a href="~/Eventos/Eventos">Eventos</a></li>
+        <div class="clear"> </div>
+    </ul>
+</div>
 
-<h2>Eventos</h2>
+<div>
 
-<a class="btn btn-block" href="~/Eventos/CreateEventos"> + Eventos</a>
+    <font size="5" color="White">Eventos</font>
+</div>
+
+
+<table class="table table-responsive table-hover ">
+    <thead>
+        <tr>
+            <th><a class="btn btn-block" href="~/Eventos/CreateEventos"> + Eventos</a></th>
+            <th><a class="btn btn-block" href="~/Eventos/AddMusico">  Adicionar Musico ao Evento</a></th>
+            <th><a class="btn btn-block" href="~/Eventos/AddEmpresa">  Adicionar Empresa ao Evento</a></th>
+            <th><a class="btn btn-block" href="~/Eventos/EventosEmpresas"> Empresas do Evento</a></th>
+            <th><a class="btn btn-block" href="~/Eventos/EventosMusicos"> Musicos do Evento</a></th>
+        </tr>
+    </thead>
+</table>
+
 <table class="table table-responsive table-hover">
     <thead>
         <tr>
@@ -15,8 +41,9 @@
             <th>Estado</th>
             <th>Cidade</th>
            
-            <th>Empresa</th>
         </tr>
+    
+      
     </thead>
     @foreach (var item in Model)
     {
@@ -27,10 +54,12 @@
             <th>@item.localEvento.nomeEstado</th>
             <th>@item.localEvento.nomeCidade</th>
            
-            @*<th>@item.empresaEvento</th>*@
 
             <th><a class="btn btn-warning" href="~/Eventos/Update/@item.idEvento">Atualizar</a></th>
             <th><a class="btn btn-danger" href="~/Eventos/Delete/@item.idEvento">Deletar</a></th>
         </tr>
+       
+         
+
     }
 </table>

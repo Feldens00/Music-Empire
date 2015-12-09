@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Entidades.E.Eventos>
+@{
+    ViewBag.Title = "AddEmpresa";
+}
+div class="clear"> </div>
+<div class="top-nav">
+    <ul>
+        <li class="active1"><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Musicos/Musicos">Musicos</a></li>
+        <li><a href="~/Empresas/Empresas">Empresas</a></li>
+        <li><a href="~/Local/Local">Local</a></li>
+        <li><a href="~/Eventos/Eventos">Eventos</a></li>
+        <div class="clear"> </div>
+    </ul>
+</div>
+
+<div>
+
+    <font size="5" color="White">Adicione mais empresas ao evento</font>
+</div>	
+
+
+<div class="panel">
+    <form action="~/Eventos/AddEmpresa" method="post">
+
+
+
+        <div class="form-group">
+            <label>Evento</label>
+            <select class="form-control" id="SelectedUserRoleId" name="idEvento">
+                <option value="value">Selecione o Evento</option>
+
+                @foreach (Entidades.E.Eventos item in @ViewBag.ListEvento)
+                {
+                    <option value="@item.idEvento">@item.nomeEvento</option>
+                }
+
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label>Empresa</label>
+            <select class="form-control" id="SelectedUserRoleId" name="empresaEvento.idEmpresa">
+                <option value="value">Selecione a Empresa</option>
+
+                @foreach (Entidades.E.Empresas item in @ViewBag.ListEmpresa)
+                {
+                    <option value="@item.idEmpresa">@item.nomeEmpresa</option>
+                }
+
+            </select>
+        </div>
+
+
+
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>

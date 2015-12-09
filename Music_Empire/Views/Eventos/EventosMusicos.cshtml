@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Entidades.E.Eventos>
+@{
+    ViewBag.Title = "EventosMusicos";
+}
+div class="clear"> </div>
+<div class="top-nav">
+    <ul>
+        <li class="active1"><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Musicos/Musicos">Musicos</a></li>
+        <li><a href="~/Empresas/Empresas">Empresas</a></li>
+        <li><a href="~/Local/Local">Local</a></li>
+        <li><a href="~/Eventos/Eventos">Eventos</a></li>
+        <div class="clear"> </div>
+    </ul>
+</div>
+
+<div>
+
+    <font size="5" color="White">Musicos que comparecerão ao evento</font>
+</div>
+
+
+<table class="table table-responsive table-hover">
+    <thead>
+        <tr>
+            <th>Evento</th>
+            <th>Musico</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.nomeEvento</th>
+            <th>@item.musico.nomeMusico</th>
+
+           
+            <th><a class="btn btn-danger" href="~/Eventos/DeleteMusicos/@item.musico.idMusico">Deletar</a></th>
+        </tr>
+
+    }
+</table>
+

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Entidades.E.Musico>
+@{
+    ViewBag.Title = "CreateMusicos";
+}
+<div class="clear"> </div>
+<div class="top-nav">
+    <ul>
+        <li class="active1"><a href="~/Home/Index">Home</a></li>
+       
+        <div class="clear"> </div>
+    </ul>
+</div>
+
+
+<div>
+    
+    <font size="5" color="White">Cadastro de Musico</font>
+</div>		
+
+
+
+<div class="panel">
+    <form action="CreateMusicos" method="post">
+
+
+
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" placeholder="Nome do Musico" type="text" id="nomeMusico" name="nomeMusico"  />
+        </div>
+
+        <div class="form-group">
+            <label>Endereço</label>
+            <input class="form-control" placeholder="Endereço do Musico" type="text" id="enderecoMusico" name="enderecoMusico" />
+        </div>
+
+        <div class="form-group col-lg-12">
+            <label>Usuário</label>
+            <input class="form-control" maxlength="15" type="text" name="loginMusico.user">
+            <label>Senha</label>
+            <input class="form-control" minlength="5" maxlength="15" type="password" name="loginMusico.senha">
+        </div>
+
+        <div class="form-group">
+            <label>Cidade</label>
+            <select class="form-control" id="SelectedUserRoleId" name="localMusico.idLocal">
+                <option value="value">Selecione uma Cidade</option>
+
+                @foreach (var item in @ViewBag.ListCidades)
+                {
+                    <option value="@item.idLocal">@item.nomeCidade</option>
+                }
+
+            </select>
+        </div>
+
+       
+
+
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>

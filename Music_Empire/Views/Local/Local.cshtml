@@ -1,9 +1,23 @@
-﻿@model IEnumerable<Music_Empire.Models.Local>
+﻿@model IEnumerable<Entidades.E.Local>
 @{
     ViewBag.Title = "Local";
 }
+div class="clear"> </div>
+<div class="top-nav">
+    <ul>
+        <li class="active1"><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Musicos/Musicos">Musicos</a></li>
+        <li><a href="~/Empresas/Empresas">Empresas</a></li>
+        <li><a href="~/Local/Local">Local</a></li>
+        <li><a href="~/Eventos/Eventos">Eventos</a></li>
+        <div class="clear"> </div>
+    </ul>
+</div>
+		
+<div>
 
-<h2>Local</h2>
+    <font size="5" color="White">Locais</font>
+</div>		
 <a class="btn btn-block" href="~/Local/CreateLocal"> + Local</a>
 <table class="table table-responsive table-hover">
     <thead>
@@ -25,7 +39,7 @@
             
 
             <th><a class="btn btn-warning" href="~/Local/UpdateLocal/@item.idLocal">Atualizar</a></th>
-            <th><a class="btn btn-danger" href="~/Local/Delete/@item.idLocal">Deletar</a></th>
+            
         </tr>
     }
 </table>

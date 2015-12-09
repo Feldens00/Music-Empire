@@ -1,12 +1,26 @@
-﻿@model Music_Empire.Models.Local
+﻿@model Entidades.E.Local
 @{
     ViewBag.Title = "UpdateLocal";
 }
+div class="clear"> </div>
+<div class="top-nav">
+    <ul>
+        <li class="active1"><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Musicos/Musicos">Musicos</a></li>
+        <li><a href="~/Empresas/Empresas">Empresas</a></li>
+        <li><a href="~/Local/Local">Local</a></li>
+        <li><a href="~/Eventos/Eventos">Eventos</a></li>
+        <div class="clear"> </div>
+    </ul>
+</div>
 
-<h2>Update</h2>
+			
+<div>
 
+    <font size="5" color="White">Editar</font>
+</div>		
 <div class="panel">
-    <form action="~/Local/UpdateLocal/@Model.idLocal" method="post">
+    <form action="~/Local/UpdateLocal" method="post">
 
 
         <div class="form-group">

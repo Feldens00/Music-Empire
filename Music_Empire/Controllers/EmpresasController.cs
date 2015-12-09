@@ -1,9 +1,7 @@
-﻿using FinancasConnections;
-using Music_Empire.Models;
-using System;
+﻿using Entidades.E;
+using FinancasConnections;
+using Repositorio.R;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Music_Empire.Controllers
@@ -12,45 +10,29 @@ namespace Music_Empire.Controllers
     {
         DataBase database = new DataBase();
         EmpresasRepositorys empRep = new EmpresasRepositorys();
-
         LocalRepositorys locRep = new LocalRepositorys();
-            LocalRepositorys locRep2 = new LocalRepositorys();
+        
+
+        public static int ident;
+        public static string usuariologado;
+        public static bool logou;
         // GET: Empresas
         public ActionResult Empresas()
         {
+            if (logou)
+            {
+                ident = (int)TempData.Peek("identificador");
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             var emp = empRep.getAll();
             return View(emp);
         }
 
-        [HttpGet]
-        public ActionResult CreateEmpresas()
-        {
-            List<Local> ListEstado = new List<Local>(locRep.getAll());
-            ViewBag.ListEstado = ListEstado;
-
-            
-
-
-
-
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult CreateEmpresas(Empresas emp)
-        {
-            List<Local> ListEstado = new List<Local>(locRep.getAll());
-            ViewBag.ListEstado = ListEstado;
-
-            
-
-            if (ModelState.IsValid)
-            {
-                empRep.Create(emp);
-                return RedirectToAction("Empresas");
-            }
-            return View();
-        }
+       
 
         public ActionResult Delete(int id)
         {

@@ -1,10 +1,25 @@
-﻿@model IEnumerable<Music_Empire.Models.Empresas>
+﻿@model IEnumerable<Entidades.E.Empresas>
 @{
     ViewBag.Title = "Empresas";
 }
+<div class="clear"> </div>
+<div class="top-nav">
+    <ul>
+        <li class="active1"><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Musicos/Musicos">Musicos</a></li>
+        <li><a href="~/Empresas/Empresas">Empresas</a></li>
+        <li><a href="~/Local/Local">Local</a></li>
+        <li><a href="~/Eventos/Eventos">Eventos</a></li>
+        <div class="clear"> </div>
+    </ul>
+</div>
 
-<h2>Empresas</h2>
-<a class="btn btn-block" href="~/Empresas/CreateEmpresas"> + Empresa</a>
+		
+<div>
+
+    <font size="5" color="White">Empresas</font>
+</div>		
+
 <table class="table table-responsive table-hover">
     <thead>
         <tr>

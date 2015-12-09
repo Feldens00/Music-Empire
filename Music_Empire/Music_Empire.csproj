@@ -74,6 +74,7 @@
     </Reference>
     <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -130,7 +131,11 @@
     <Content Include="bin\Content\Site.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cssteste.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\jquery.jqzoom.css" />
+    <Content Include="css\responsiveslides.css" />
+    <Content Include="css\style.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -138,7 +143,82 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="central.php" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="images\a1.jpg" />
+    <Content Include="images\a10.jpg" />
+    <Content Include="images\a11.jpg" />
+    <Content Include="images\a12.jpg" />
+    <Content Include="images\a2.jpg" />
+    <Content Include="images\a3.jpg" />
+    <Content Include="images\a4.jpg" />
+    <Content Include="images\a5.jpg" />
+    <Content Include="images\a6.jpg" />
+    <Content Include="images\a7.jpg" />
+    <Content Include="images\a8.jpg" />
+    <Content Include="images\a9.jpg" />
+    <Content Include="images\active.gif" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\body-bg.png" />
+    <Content Include="images\button.gif" />
+    <Content Include="images\button2.gif" />
+    <Content Include="images\cart.png" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\g1.jpg" />
+    <Content Include="images\g10.jpg" />
+    <Content Include="images\g11.jpg" />
+    <Content Include="images\g12.jpg" />
+    <Content Include="images\g2.jpg" />
+    <Content Include="images\g3.jpg" />
+    <Content Include="images\g4.jpg" />
+    <Content Include="images\g5.jpg" />
+    <Content Include="images\g6.jpg" />
+    <Content Include="images\g7.jpg" />
+    <Content Include="images\g8.jpg" />
+    <Content Include="images\g9.jpg" />
+    <Content Include="images\gpluse.png" />
+    <Content Include="images\h1.jpg" />
+    <Content Include="images\h2.jpg" />
+    <Content Include="images\h3.jpg" />
+    <Content Include="images\h4.jpg" />
+    <Content Include="images\h5.jpg" />
+    <Content Include="images\head1.jpg" />
+    <Content Include="images\head1.png" />
+    <Content Include="images\head1h.jpg" />
+    <Content Include="images\head1h.png" />
+    <Content Include="images\head1h0.jpg" />
+    <Content Include="images\head1h0.png" />
+    <Content Include="images\heading.jpg" />
+    <Content Include="images\heading.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\nav_active.gif" />
+    <Content Include="images\nav_active.jpg" />
+    <Content Include="images\rss.png" />
+    <Content Include="images\search.gif" />
+    <Content Include="images\search.png" />
+    <Content Include="images\sicoal-icons.jpg" />
+    <Content Include="images\sicoal-icons.png" />
+    <Content Include="images\slider1.jpg" />
+    <Content Include="images\slider2.jpg" />
+    <Content Include="images\slider3.jpg" />
+    <Content Include="images\top-nav.jpg" />
+    <Content Include="images\top-nav.png" />
+    <Content Include="images\top-nav1.png" />
+    <Content Include="images\triumph_big1.jpg" />
+    <Content Include="images\triumph_small1.jpg" />
+    <Content Include="images\triumph_small2.jpg" />
+    <Content Include="images\triumph_small3.jpg" />
+    <Content Include="images\triumph_thumb1.jpg" />
+    <Content Include="images\triumph_thumb2.jpg" />
+    <Content Include="images\triumph_thumb3.jpg" />
+    <Content Include="images\twitter.png" />
+    <Content Include="images\wrap-bg.jpg" />
+    <Content Include="images\wrap-bg.png" />
+    <Content Include="images\zoomloader.gif" />
+    <Content Include="js\jquery-1.6.js" />
+    <Content Include="js\jquery.jqzoom-core.js" />
+    <Content Include="js\responsiveslides.min.js" />
     <Content Include="Scripts\agency.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -163,14 +243,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Empresas.cs" />
-    <Compile Include="Models\EmpresasRepositorys.cs" />
-    <Compile Include="Models\EventoRepository.cs" />
-    <Compile Include="Models\Eventos.cs" />
-    <Compile Include="Models\Local.cs" />
-    <Compile Include="Models\LocalRepositorys.cs" />
-    <Compile Include="Models\Musico.cs" />
-    <Compile Include="Models\MusicoRepositorys.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -187,17 +259,25 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Empresas\CreateEmpresas.cshtml" />
+    <Content Include="Views\Home\CreateEmpresas.cshtml" />
     <Content Include="Views\Local\Local.cshtml" />
     <Content Include="Views\Local\CreateLocal.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Musicos\Musicos.cshtml" />
-    <Content Include="Views\Musicos\CreateMusicos.cshtml" />
+    <Content Include="Views\Home\CreateMusicos.cshtml" />
     <Content Include="Views\Eventos\Eventos.cshtml" />
     <Content Include="Views\Eventos\CreateEventos.cshtml" />
     <Content Include="Views\Local\UpdateLocal.cshtml" />
     <Content Include="Views\Empresas\UpdateEmpresas.cshtml" />
     <Content Include="Views\Musicos\UpdateMusicos.cshtml" />
+    <Content Include="Views\Eventos\Update.cshtml" />
+    <Content Include="Views\Eventos\AddEmpresa.cshtml" />
+    <Content Include="Views\Eventos\EventosMusicos.cshtml" />
+    <Content Include="Views\Eventos\EventosEmpresas.cshtml" />
+    <Content Include="Views\Eventos\AddMusico.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Shared\_LayoutMusicE.cshtml" />
+    <Content Include="Views\Shared\_MusicE.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -207,12 +287,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\FinancasConnections\FinancasConnections\FinancasConnections.csproj">
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{fc49be82-e110-42d6-9b15-5df814a7d2cc}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinancasConnections\FinancasConnections.csproj">
       <Project>{9a0d186e-2939-4a6b-b5e5-e0feef1b6177}</Project>
       <Name>FinancasConnections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repositorio\Repositorio.csproj">
+      <Project>{efbfca7f-be26-4ab0-b28a-835e47663896}</Project>
+      <Name>Repositorio</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

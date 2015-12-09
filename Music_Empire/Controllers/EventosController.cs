@@ -1,8 +1,6 @@
-﻿using Music_Empire.Models;
-using System;
+﻿using Entidades.E;
+using Repositorio.R;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Music_Empire.Controllers
@@ -17,10 +15,87 @@ namespace Music_Empire.Controllers
 
         public ActionResult Eventos()
         {
-            var eve = eveRep.getAll();
+            var eve = eveRep.getAllEventos();
+            
             return View(eve);
         }
-       
+
+        public ActionResult EventosMusicos()
+        {
+            var eve = eveRep.getAllMusico();
+
+            return View(eve);
+        }
+
+        [HttpGet]
+        public ActionResult AddMusico()
+        {
+
+
+            //List<Eventos> ListMusEvento = new List<Eventos>(eveRep.getAllMusico());
+            //ViewBag.ListMusEvento = ListMusEvento;
+
+
+            List<Musico> ListMusico = new List<Musico>(musRep.getAll());
+            ViewBag.ListMusico = ListMusico;
+
+            List<Eventos> ListEvento = new List<Eventos>(eveRep.getAllEventos());
+            ViewBag.ListEvento = ListEvento;
+
+            return View();
+
+        }
+
+        [HttpPost]
+        public ActionResult AddMusico(Eventos evento)
+        {
+
+
+            if (ModelState.IsValid)
+            {
+                eveRep.addMusico(evento);
+                return RedirectToAction("EventosMusicos");
+            }
+
+            return View();
+        }
+
+        public ActionResult EventosEmpresas()
+        {
+            var eve = eveRep.getAllEmpresa();
+
+            return View(eve);
+        }
+
+
+        [HttpGet]
+        public ActionResult AddEmpresa()
+        {
+            List<Empresas> ListEmpresa = new List<Empresas>(empRep.getAll());
+            ViewBag.ListEmpresa = ListEmpresa;
+            
+            List<Eventos> ListEvento = new List<Eventos>(eveRep.getAllEventos());
+            ViewBag.ListEvento = ListEvento;
+
+
+            return View();
+
+        }
+
+        [HttpPost]
+        public ActionResult AddEmpresa(Eventos evento)
+        {
+
+
+            if (ModelState.IsValid)
+            {
+                eveRep.addEmpresa(evento);
+                return RedirectToAction("EventosEmpresas");
+            }
+
+            return View();
+        }
+
         //private SelectList ListEmpresa()
         //{
         //    var lista = empRep.getAll();
@@ -32,14 +107,18 @@ namespace Music_Empire.Controllers
             //ViewBag.ListEmpresa = ListEmpresa();
             
 
-            List<Empresas> ListEmpresa = new List<Empresas>(empRep.getAll());
+            IEnumerable<Empresas> ListEmpresa = empRep.getAll();
             ViewBag.ListEmpresa = ListEmpresa;
 
-            List<Local> ListEstado = new List<Local>(locRep.getAll());
+            IEnumerable<Local> ListEstado = locRep.getAll();
             ViewBag.ListEstado = ListEstado;
 
+            IEnumerable<Musico> ListMusico = musRep.getAll();
+            ViewBag.ListMusico = ListMusico;
 
-            return View();
+            IEnumerable<Eventos> evs = eveRep.getAllEventos();
+
+            return View(evs);
         }
 
         [HttpPost]
@@ -47,30 +126,7 @@ namespace Music_Empire.Controllers
         {
 
 
-            //Eventos eve = new Eventos();
-            //eve.dataEvento = form["dataEvento"];
-            //eve.nomeEvento = form["nomeEvento"];
-            //eve.enderecoEvento = form["enderecoEvento"];
-            //eve.localEvento.idLocal = int.Parse(form["localEvento.idLocal"]);
-            //eve.arrayEmpresa = ViewBag.ListEmpresa;
-
-            //var evento = eve;
-
-            //var evento = new Eventos
-            ////{
-
-            //    dataEvento = form["dataEvento"],
-            //    nomeEvento = form["nomeEvento"],
-            //    enderecoEvento = form["enderecoEvento"],
-            //    localEvento = new Local
-            //    {
-            //        idLocal = int.Parse(form["idLocal"])
-
-            //    },
-            //    arrayEmpresa = ViewBag.ListEmpresa
-
-
-            //};
+           
             if (ModelState.IsValid)
             {
                 eveRep.Create(evento);
@@ -82,18 +138,26 @@ namespace Music_Empire.Controllers
 
         public ActionResult Delete(int id)
         {
-            empRep.Delete(id);
+            eveRep.Delete(id);
             return RedirectToAction("Eventos");
         }
+        public ActionResult DeleteEmpresas(int id)
+        {
+            eveRep.DeleteEmpresa(id);
+            return RedirectToAction("EventosEmpresas");
+        }
+        public ActionResult DeleteMusicos(int id)
+        {
+            eveRep.DeleteMusico(id);
+            return RedirectToAction("EventosMusicos");
+        }
+
 
         public ActionResult Update(int id)
         {
-            List<Local> ListEstado = new List<Local>(locRep.getAll());
+           
+            IEnumerable<Local> ListEstado = locRep.getAll();
             ViewBag.ListEstado = ListEstado;
-            
-
-            List<Local> ListEmpresa = new List<Local>(locRep.getAll());
-            ViewBag.ListEmpresa = ListEmpresa;
 
 
             var eve = eveRep.getOne(id);
