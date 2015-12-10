@@ -17,7 +17,26 @@ namespace Music_Empire.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public ActionResult CadastroLocal()
+        {
 
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult CadastroLocal(Local local)
+        {
+
+
+
+            locRep.Create(local);
+            return RedirectToAction("Login");
+
+
+
+        }
         [HttpGet]
         public ActionResult CreateEmpresas()
         {

@@ -14,8 +14,61 @@ namespace Repositorio.R
     {
         DataBase conn = new DataBase();
         private List<Empresas> empresa = new List<Empresas>();
+        private List<Eventos> evento = new List<Eventos>();
+
+        public IEnumerable<Eventos> getEventos(string nome)
+        {
+            MySqlCommand cmm = new MySqlCommand();
+
+            StringBuilder sql = new StringBuilder();
+            sql.Append(" select *");
+            sql.Append(" From eventos e ");
+            sql.Append(" inner join locais l ");
+            sql.Append(" on e.idLocal = l.idLocal ");
+            sql.Append(" inner join eventos_empresas ee ");
+            sql.Append(" on e.idEvento = ee.eventos_idEvento");
+            sql.Append(" inner join empresas emp ");
+            sql.Append(" on emp.idEmpresa = ee.empresas_idEmpresa ");
+            sql.Append(" where emp.nomeEmpresa = @emp ");
+            sql.Append("   order by idEvento desc ");
 
 
+            cmm.CommandText = sql.ToString();
+            cmm.Parameters.AddWithValue("@emp", nome);
+           
+
+            MySqlDataReader dr = conn.executarConsultas(cmm);
+            while (dr.Read())
+            {
+                Eventos eve = new Eventos
+                {
+                    idEvento = (int)dr["idEvento"],
+                    nomeEvento = (string)dr["nomeEvento"],
+                    dataEvento = (DateTime)dr["dataEvento"],
+                    enderecoEvento = (string)dr["enderecoEvento"],
+
+                    localEvento = new Local
+                    {
+                        idLocal = (int)dr["idLocal"],
+                        sigla = (string)dr["sigla"],
+                        nomeEstado = (string)dr["nomeEstado"],
+                        nomeCidade = (string)dr["nomeCidade"]
+
+
+                    },
+                    empresaEvento = new Empresas
+                    {
+                        idEmpresa = (int)dr["idEmpresa"],
+                        nomeEmpresa = (string)dr["nomeEmpresa"],
+                        enderecoEmpresa = (string)dr["enderecoEmpresa"]
+                    },
+
+                };
+                evento.Add(eve);
+            }
+            dr.Dispose();
+            return evento;
+        }
         public IEnumerable<Empresas> getAll()
         {
             MySqlCommand cmm = new MySqlCommand();
@@ -59,6 +112,7 @@ namespace Repositorio.R
             return empresa;
         }
 
+      
 
         public void Create(Empresas pEmp)
         {

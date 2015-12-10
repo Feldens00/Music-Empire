@@ -13,8 +13,60 @@ namespace Repositorio.R
     {
         DataBase conn = new DataBase();
         private List<Musico> musico = new List<Musico>();
+        private List<Eventos> evento = new List<Eventos>();
+
+        public IEnumerable<Eventos> getEventos(string nome)
+        {
+            MySqlCommand cmm = new MySqlCommand();
+
+            StringBuilder sql = new StringBuilder();
+            sql.Append(" select * ");
+            sql.Append(" From eventos e ");
+            sql.Append(" inner join locais l ");
+            sql.Append(" on e.idLocal = l.idLocal ");
+            sql.Append(" inner join eventos_musicos em ");
+            sql.Append(" on e.idEvento = em.eventos_idEvento");
+            sql.Append(" inner join musicos m ");
+            sql.Append(" on m.idMusico = em.musicos_idMusico ");
+            sql.Append(" where m.nomeMusico = @mus ");
+            sql.Append("   order by idEvento desc ");
 
 
+            cmm.CommandText = sql.ToString();
+            cmm.Parameters.AddWithValue("@mus", nome);
+
+
+            MySqlDataReader dr = conn.executarConsultas(cmm);
+            while (dr.Read())
+            {
+                Eventos eve = new Eventos
+                {
+                    idEvento = (int)dr["idEvento"],
+                    nomeEvento = (string)dr["nomeEvento"],
+                    dataEvento = (DateTime)dr["dataEvento"],
+                    enderecoEvento = (string)dr["enderecoEvento"],
+
+                    localEvento = new Local
+                    {
+                        idLocal = (int)dr["idLocal"],
+                        sigla = (string)dr["sigla"],
+                        nomeEstado = (string)dr["nomeEstado"],
+                        nomeCidade = (string)dr["nomeCidade"]
+
+
+                    },
+                    musico = new Musico
+                    {
+                        idMusico = (int)dr["idMusico"],
+                        nomeMusico = (string)dr["nomeMusico"],
+                        enderecoMusico = (string)dr["enderecoMusico"]
+                    }
+                };
+                evento.Add(eve);
+            }
+            dr.Dispose();
+            return evento;
+        }
         public IEnumerable<Musico> getAll()
         {
             MySqlCommand cmm = new MySqlCommand();

@@ -7,9 +7,18 @@
     {
         cLayout = " ~/Views/Shared/_LayoutMusicE.cshtml";
     }
+    else if(controller == "Musicos")
+    {
+        cLayout = "~/Views/Shared/_LayoutMusicos.cshtml";
+    }
+    else if(controller == "Empresas")
+    {
+        cLayout = "~/Views/Shared/_LayoutEmpresas.cshtml";
+    }
     else
     {
         cLayout = "~/Views/Shared/_MusicE.cshtml";
     }
+
     Layout = cLayout;
 }

@@ -1,10 +1,10 @@
-C:\Users\Artur\Desktop\Music_Empire\Entidades\bin\Debug\Entidades.dll
-C:\Users\Artur\Desktop\Music_Empire\Entidades\bin\Debug\Entidades.pdb
-C:\Users\Artur\Desktop\Music_Empire\Entidades\obj\Debug\Entidades.dll
-C:\Users\Artur\Desktop\Music_Empire\Entidades\obj\Debug\Entidades.pdb
-C:\Users\Artur\Desktop\Music_Empire\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\Artur\Desktop\a\Music_Empire\Entidades\bin\Debug\Entidades.dll
 C:\Users\Artur\Desktop\a\Music_Empire\Entidades\bin\Debug\Entidades.pdb
 C:\Users\Artur\Desktop\a\Music_Empire\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\Artur\Desktop\a\Music_Empire\Entidades\obj\Debug\Entidades.dll
 C:\Users\Artur\Desktop\a\Music_Empire\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Artur\Desktop\Music_Empire\Entidades\bin\Debug\Entidades.dll
+C:\Users\Artur\Desktop\Music_Empire\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Artur\Desktop\Music_Empire\Entidades\obj\Debug\Entidades.dll
+C:\Users\Artur\Desktop\Music_Empire\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Artur\Desktop\Music_Empire\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache

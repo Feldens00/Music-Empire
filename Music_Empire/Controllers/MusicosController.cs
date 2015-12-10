@@ -29,7 +29,13 @@ namespace Music_Empire.Controllers
             return View(mus);
         }
 
-       
+        [HttpPost]
+        public ActionResult Busca(string buscaMusico)
+        {
+            
+            var musico = musRep.getEventos(buscaMusico);
+            return View(musico);
+        }
 
         public ActionResult Delete(int id)
         {

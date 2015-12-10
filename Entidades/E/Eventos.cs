@@ -10,7 +10,7 @@ namespace Entidades.E
     {
         public int idEvento { get; set; }
         public string nomeEvento { get; set; }
-        public string dataEvento { get; set; }
+        public DateTime dataEvento { get; set; }
         public string enderecoEvento { get; set; }
         public Local localEvento { get; set; }
         public Empresas empresaEvento { get; set; }
@@ -25,7 +25,7 @@ namespace Entidades.E
 
         }
 
-        public Eventos(int pIdEvento, string pNomeEvento, Empresas pEmpresaEvento, Musico pMusico, string pDataEvento, string pEnderecoEvento,
+        public Eventos(int pIdEvento, string pNomeEvento, Empresas pEmpresaEvento, Musico pMusico, DateTime pDataEvento, string pEnderecoEvento,
             Local pLocalEvento)
         {
             idEvento = pIdEvento;

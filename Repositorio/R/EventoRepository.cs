@@ -35,12 +35,13 @@ namespace Repositorio.R
             MySqlDataReader dr = conn.executarConsultas(cmm);
             while (dr.Read())
             {
-
+                
                 Eventos eve = new Eventos
                 {
                     idEvento = (int)dr["idEvento"],
                     nomeEvento = (string)dr["nomeEvento"],
-                    dataEvento = (string)dr["dataEvento"],
+                    dataEvento = (DateTime)dr["dataEvento"],
+                    
                     enderecoEvento = (string)dr["enderecoEvento"],
                     localEvento = new Local
                     {
@@ -59,6 +60,21 @@ namespace Repositorio.R
             dr.Dispose();
             return evento;
         }
+        public StringBuilder ConverterData(DateTime pData)
+        {
+            int dataY = pData.Year;
+            int dataM = pData.Month;
+            int dataD = pData.Day;
+            StringBuilder datac = new StringBuilder();
+            datac.Append(dataY.ToString());
+            datac.Append("/");
+            datac.Append(dataM.ToString());
+            datac.Append("/");
+            datac.Append(dataD.ToString());
+
+            return datac;
+        }
+
 
         //public IEnumerable<Eventos> getAll()
         //{
@@ -137,7 +153,7 @@ namespace Repositorio.R
                 {
                     idEvento = (int)dr["idEvento"],
                     nomeEvento = (string)dr["nomeEvento"],
-                    dataEvento = (string)dr["dataEvento"],
+                    dataEvento = (DateTime)dr["dataEvento"],
                     enderecoEvento = (string)dr["enderecoEvento"],
 
 
@@ -183,7 +199,7 @@ namespace Repositorio.R
                 {
                     idEvento = (int)dr["idEvento"],
                     nomeEvento = (string)dr["nomeEvento"],
-                    dataEvento = (string)dr["dataEvento"],
+                    dataEvento = (DateTime)dr["dataEvento"],
                     enderecoEvento = (string)dr["enderecoEvento"],
 
                     empresaEvento = new Empresas
@@ -291,17 +307,19 @@ namespace Repositorio.R
 
             MySqlCommand cmm = new MySqlCommand();
 
+            StringBuilder datac = ConverterData(pEve.dataEvento);
+
             StringBuilder sql = new StringBuilder();
             sql.Append("insert into eventos (nomeEvento, dataEvento, enderecoEvento, idLocal) ");
             sql.Append("values (@nome, @data, @endereco, @local ) ");
 
             cmm.CommandText = sql.ToString();
             cmm.Parameters.AddWithValue("@nome", pEve.nomeEvento);
-            cmm.Parameters.AddWithValue("@data", pEve.dataEvento);
+            cmm.Parameters.AddWithValue("@data", datac);
             cmm.Parameters.AddWithValue("@local", pEve.localEvento.idLocal);
             cmm.Parameters.AddWithValue("@endereco", pEve.enderecoEvento);
             string nom = pEve.nomeEvento;
-            string datae = pEve.dataEvento;
+            string datae = datac.ToString();
 
             conn.executarComandoScalar(cmm);
             sql.Clear();
@@ -368,7 +386,7 @@ namespace Repositorio.R
             {
                 idEvento = (int)dr["idEvento"],
                 nomeEvento = (string)dr["nomeEvento"],
-                dataEvento = (string)dr["dataEvento"],
+                dataEvento = (DateTime)dr["dataEvento"],
                 enderecoEvento = (string)dr["enderecoEvento"],
                 localEvento = new Local
                 {

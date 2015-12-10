@@ -1,7 +1,8 @@
 ﻿@model IEnumerable<Entidades.E.Eventos>
 @{
-    ViewBag.Title = "Eventos";
+    ViewBag.Title = "Busca";
 }
+
 <div class="clear"> </div>
 <div class="top-nav">
     <ul>
@@ -14,52 +15,39 @@
     </ul>
 </div>
 
-<div>
 
-    <font size="5" color="White">Eventos</font>
-</div>
+<font size="5" color="White">Eventos do Empresa Pesquisada: </font>
 
 
 <table class="table table-responsive">
     <thead>
-        <tr>
-            <th><a class="btn btn-block" href="~/Eventos/CreateEventos"> + Eventos</a></th>
-            <th><a class="btn btn-block" href="~/Eventos/AddMusico">  Adicionar Musico ao Evento</a></th>
-            <th><a class="btn btn-block" href="~/Eventos/AddEmpresa">  Adicionar Empresa ao Evento</a></th>
-            <th><a class="btn btn-block" href="~/Eventos/EventosEmpresas"> Empresas do Evento</a></th>
-            <th><a class="btn btn-block" href="~/Eventos/EventosMusicos"> Musicos do Evento</a></th>
-        </tr>
-    </thead>
-</table>
-
-<table class="table table-responsive">
-    <thead>
+       
         <tr>
             <th>Nome</th>
             <th>Data</th>
             <th>Endereço</th>
             <th>Estado</th>
             <th>Cidade</th>
-           
+
         </tr>
-    
-      
+
+
     </thead>
     @foreach (var item in Model)
     {
         <tr>
             <th>@item.nomeEvento</th>
-            <th >@item.dataEvento.ToShortDateString()</th>
+            <th>@item.dataEvento.ToShortDateString()</th>
             <th>@item.enderecoEvento</th>
             <th>@item.localEvento.nomeEstado</th>
             <th>@item.localEvento.nomeCidade</th>
-           
+
 
             <th><a class="btn btn-warning" href="~/Eventos/Update/@item.idEvento">Atualizar</a></th>
             <th><a class="btn btn-danger" href="~/Eventos/Delete/@item.idEvento">Deletar</a></th>
         </tr>
-       
-         
+
+
 
     }
 </table>

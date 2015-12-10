@@ -32,7 +32,15 @@ namespace Music_Empire.Controllers
             return View(emp);
         }
 
-       
+        [HttpPost]
+        public ActionResult Busca(string buscaEmpresa)
+        {
+            ViewBag.nome = buscaEmpresa;
+           var emp= empRep.getEventos(buscaEmpresa);
+            return View(emp);
+        }
+
+
 
         public ActionResult Delete(int id)
         {

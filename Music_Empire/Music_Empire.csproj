@@ -278,6 +278,11 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Shared\_LayoutMusicE.cshtml" />
     <Content Include="Views\Shared\_MusicE.cshtml" />
+    <Content Include="Views\Empresas\Busca.cshtml" />
+    <Content Include="Views\Shared\_LayoutEmpresas.cshtml" />
+    <Content Include="Views\Shared\_LayoutMusicos.cshtml" />
+    <Content Include="Views\Musicos\Busca.cshtml" />
+    <Content Include="Views\Home\CadastroLocal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
